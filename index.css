@@ -1,0 +1,207 @@
+#container{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#container>div{
+    width: 100%;
+    background-color: black;
+    /* border: 1px solid red; */
+}
+#container>div>img{
+    width: 100%;
+   margin-top: -5px;
+    /* box-sizing: border-box; */
+  
+}
+#container>div>img:hover{
+    width: 101%;
+    margin-top: -5px;
+}
+#header_img, #footer_img{
+    margin-top: -5px;
+    width: 100%;
+    height: 90px;
+}
+
+
+
+/* --------------footer------------- */
+#footer{
+    background-color: black;
+    color: white;
+    font-family: montserrat,sans-serif;
+    
+}
+.footer1>div{
+    color: white;
+    width: 100%;
+    /* display: flex; */
+    /* border: 1px solid red; */
+   
+
+}
+.footer1{
+    display: flex;
+    width: 75%;
+    margin:0px auto;
+    justify-content: space-around;
+}
+.footer2{
+    color: white;
+}
+#footer>h1{
+    width: 75%;
+    margin: 150px auto;
+    margin-bottom: 0px;
+   color: yellow;
+    font-size: 40px;
+    /* border: 1px solid red; */
+
+    
+}
+#footer>.footer1>div>h2{
+    color:  rgb(248, 193, 11);
+}
+.white-color{
+    background-color:white;
+    color:black;
+    width: 13px;
+    height: 13px;
+    padding: 8px;
+}
+.white_color{
+    width: 13px;
+    height: 23px;
+    /* border: red 1px solid; */
+    color: white;
+    /* background-color: white; */
+    
+   
+
+}#insta{
+   display: flex;
+
+}
+#insta>h3{
+   margin: 10px 19px;
+    
+}
+#insta>h1{
+    margin-top: 0px;
+}
+#icon{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+   
+    /* border: 1px solid red; */
+}
+#icon>h1{
+    margin-top: 0px;
+}
+
+
+#footer-content{
+    width: 76%;
+    margin: auto;
+}
+#twitter>a, #apple>a, #instagram>a, #snapchat>a ,#facebook>a, #pinterest>a{
+    color: white;
+}
+#email{
+    background-color: black;
+    border: none;
+    font-size: 25px;
+    width: 100%;
+}
+#sub{
+    width: 100%;
+    height: 40px;
+    color: black;
+    background-color: rgb(248, 193, 11);
+}
+#line{
+   color:  rgb(248, 193, 11);
+    width: 100%;
+   margin-top: 4px;
+}
+#attach{
+    display:flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+#attach>div{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.footer2{
+    width: 75%;
+  
+    margin: auto;
+    color: aliceblue;
+}
+.icon::before{
+    font-family: icomoon!important;
+    content: "\E92B";
+}
+
+.footer2>div{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    
+}
+.footer2>div>div>h3{
+    color:  rgb(248, 193, 11);
+}
+#per{
+    color:  rgb(248, 193, 11);
+}
+.footer2>div>h3{
+    color:  rgb(248, 193, 11);
+}
+#imgreturn>div{
+   margin:30px auto;
+   height: 10px;
+    /* border: 1px solid red; */
+}
+#clothing{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    color: aliceblue;
+    margin: auto;
+}
+#blue{
+    color: rgb(58, 181, 247);
+}
+#footer-content{
+    margin-top: 20px;
+    color: aliceblue;
+    font-stretch: expanded;
+    font-size: 20px;
+    font-family: montserrat-regular,sans-serif;
+
+    
+}
+#clothing>div>p{
+    margin-top: 0px;
+   margin-bottom: 5px;
+}
+
+#emoji{
+    font-size: 10px;
+    margin-top: 15px;
+    /* background-color: red; */
+}
+#emo{
+    display: flex;
+    width: 75%;
+    margin: auto auto 0px auto;
+    /* border: 1px solid red; */
+}
+#emo>h1{
+    color: yellow;
+}
