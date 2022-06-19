@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #Pay
+        {
+            border: 2px solid silver;
+            width: 500px;
+            height: auto;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+           
+        }
+        #pay
+        {
+            float: right;
+        }
+        #CN>input
+        {
+            float: right;
+            padding: 5px;
+            background-color: white
+             
+        }
+        #Name>input
+        {
+            float: right;
+            padding: 5px;
+             background-color: white
+        }
+        #Date>input
+        {
+            float: right;
+            padding: 5px;
+             background-color: white
+        }
+        #Cvv >input
+        {
+            float: right;
+            padding: 5px;
+             background-color: white
+        }
+        #Pay > h3
+        {
+             color: black;
+        }
+        #payButton
+        {
+            width: 100%;
+            height: 50px;
+            margin-top: 45px;
+             background-color: green;
+            border: none;
+            font-style: normal;
+            font-weight: bolder;
+            color: white
+
+        }
+        #Amount
+        {
+            float: right;
+            color: black
+        }
+
+        .last {
+        width: 100%;
+    
+        text-align: center;
+        background-color:green;
+        color: white;
+        font-size: 20px;
+        font-style: solid;
+        height: 40px;  
+        padding-top: 1%;
+        }
+        .last>a{
+        text-decoration: none;
+        color: white;
+        }
+
+        #last_nav{
+        display: flex;
+        padding-left: 12%;
+        justify-content: space-between;
+        margin-top: 80px;
+        background-color: rgb(247, 233, 233);
+        }
+        #last_nav>div{
+        display: flex;
+        }
+        #last_nav>div>p{
+        margin-right: 20px;
+        cursor: pointer;
+        }
+
+        #last_nav>div>img{
+        margin-right: 30px;
+        height: 30px;
+        padding-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "MainDiv">
+        <h1 style="text-align: center; padding-top: 10px ;color: teal;font-style: oblique;">Payment Getway</h1>
+        <div id = "Pay">
+            <p>PAYMENT  <span >METHOD:- </span><span id="Amount"></span></p>
+            <hr>
+            <!-- <h3>PAYMENT METHOD</h3> -->
+            <div id='head' style='padding: 10px;'>
+                <label for='option-1' style=' padding: 5px; font-size: 1rem;'>
+                <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                Credit / Debit Card</label>
+            </div>
+
+
+            <p id="CN">Card Number <input type="number" id="cardN" placeholder="Card Number 16 Digit"></p>
+            
+
+            <p id = "Name">Name On Card <input type="text" id="cardN1" placeholder="Name On Card"></p>
+
+            <p id="Date">Expiry (MM/YY) <input type="text" id="cardN2" placeholder="Date Of Card (Expiry)"></p>
+
+            <p id ="Cvv">CVV <input type="password" id="cardN3" placeholder="3 Dgit Number"></p>
+
+           
+
+            <div id='block-11' style='padding: 10px;'>
+                <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                Net Banking</label>
+            </div>
+        
+            <div id='block-11' style='padding: 10px;'>
+                <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                Paytm Wallet</label>
+            </div>
+        
+            <div id='block-11' style='padding: 10px;'>
+                <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                Other Wallets</label>
+            </div>
+        
+            <div id='block-11' style='padding: 10px;'>
+                <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                UPI</label>
+            </div>
+
+             <p style="padding: 10px;">This tansaction you make is totaly secure we Do not save your CVV number</p>
+            
+            <!-- <button  class="payButton" ><a href="otp.html"></a> Pay Now</button> -->
+            <div class="last">
+                <a href="otp.html" ><strong>Pay Now</strong></a>
+            </div>
+        </div>
+    </div>
+    <div id="last_nav">
+        <div>
+            <img src="https://static.nnnow.com/Verified_by_Visa_logo.png" alt="">
+            <img src="https://static.nnnow.com/verified-mastercard.png" alt="">
+            <img src="https://static.nnnow.com/verified-pci.png" alt="">
+            <img src="https://static.nnnow.com/AMEX-safekey.png" alt="">
+        </div>
+        <div>
+            <p>2022 NNNOW</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var bagdiscount = JSON.parse(localStorage.getItem("bagdisscount")) || 0;
+    var price = JSON.parse(localStorage.getItem("priceS"));
+    
+    document.getElementById("Amount").innerHTML = `AMOUNT :- ${price}`;
+
+    
+
+    // document.getElementById("payButton").addEventListener("click",function(){
+    //     var CN = document.getElementById("cardN").value;
+    //      var CN1 = document.getElementById("cardN1").value;
+    //       var CN2 = document.getElementById("cardN2").value;
+    //        var CN3 = document.getElementById("cardN3").value;
+         
+    //     if(CN == "" || CN1 == "" || CN2 == "" ||CN3 =="")
+    //     {
+    //         alert("Please Enter All Card Details To Pay");
+    //     }
+    //     else
+    //     {
+    //         alert("Order Has Been Placed Thnak You For Shopping ...")
+    //     }
+    // })
+</script>
