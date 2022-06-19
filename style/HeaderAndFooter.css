@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: montserrat-regular;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2")
+      format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+    U+FFFD;
+}
+@font-face {
+  font-family: icomoon;
+  src: local("☺"),
+    url("https://static.bewakoof.com/fonts/iconmoon/fonts/icomoon.ttf?bznh19=")
+      format("truetype"),
+    url("https://static.bewakoof.com/fonts/iconmoon/fonts/icomoon.woff?bznh19=")
+      format("woff"),
+    url("https://static.bewakoof.com/fonts/iconmoon/fonts/icomoon.svg?bznh19=#icomoon")
+      format("svg");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+body {
+  font-family: "Montserrat", "Regular", sans-serif;
+  margin: 0;
+}
+
+.main-header {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* .top-nav {
+  display: inline-block;
+  background: #eeeeee;
+  text-align: center;
+  width: calc(100%);
+  vertical-align: middle;
+  margin-bottom: 5px;
+} */
+.top-nav-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.top-nav-item {
+  display: inline-block;
+  font-family: montserrat;
+  margin: 0 40px;
+  padding: 5px;
+  text-decoration: none;
+}
+.top-nav-items a {
+  text-decoration: none;
+  color: #0c4f1f;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 9px 0;
+}
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header_brand {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 23px;
+  height: 23px;
+  display: inline-block;
+}
+.brand-logo {
+  margin-left: 30px;
+}
+.main-header_brand img {
+  height: 100%;
+  width: 100%;
+}
+.main-nav-1 {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 388px);
+  vertical-align: middle;
+  padding: 10px 0;
+}
+.main-nav_items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav_item {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.main-nav_item a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px 3px;
+}
+.box {
+  width: 320px;
+  height: 50px;
+  background-color: #eaeaea;
+
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.box > i {
+  font-size: 20px;
+  color: #777;
+}
+
+.box > input {
+  flex: 1;
+  height: 40px;
+  background-color: #eaeaea;
+  color: #b1b1b1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-align: left;
+}
+
+.main-nav_item a:hover,
+.main-nav_item a:active {
+  transition: 2s;
+  border-bottom: 5px solid white;
+}
+.main-nav_item--cta a {
+  color: white;
+  padding: 8px 16px;
+  background-color: #ff1b68;
+  border-radius: 8px;
+}
+.main-nav_item--cta a:hover,
+.main-nav_item--cta a:active {
+  color: #ff1b68;
+  background-color: white;
+  border: none;
+}
+
+/*-------- THIS IS FOOTER ------------*/
+
+footer {
+  background-color: #141212;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4rem;
+
+  margin-top: 7%;
+}
+.footer {
+  width: 80%;
+  height: 30vh;
+  color: white;
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 2rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: yellow;
+}
+.footer-heading a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+}
+.footer-heading a:hover {
+  transition: 0, 3s;
+}
+i {
+  height: 0.8rem;
+  font-size: 1.75em;
+}
+.footer-email {
+  flex-flow: row;
+  height: 30px;
+  margin-top: 100px;
+}
+.mail {
+  display: flex;
+  flex-direction: row;
+}
+#footer-email {
+  height: 40px;
+  background: #141212;
+  border: none;
+  border-bottom: 1px solid yellow;
+}
+#footer-email-btn {
+  background-color: yellow;
+  border: none;
+  width: 100px;
+  padding: 10px;
+}
+input::placeholder {
+  color: rgb(100, 89, 89);
+  font-size: 14px;
+}
