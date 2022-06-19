@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    height: 50px;
+    width: 100%;
+    border: 1px solid red;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid rgb(13, 230, 78); */
+}
+#first{
+    display: flex;
+    padding: 12px;
+    margin-left: 12%;
+}
+#second>img{
+    width: 100%;
+    cursor: pointer;
+    height: 270px;
+}
+#container2{
+    height: 100%;
+    width: 75%;
+    /* border: 1px solid rgb(10, 10, 10); */
+    margin: auto;
+}
+#head{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+#head{
+    font-size:x-large;
+    font-weight: bolder;
+}
+#container3{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid rgb(39, 17, 238); */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px ;
+}
+#sideBar{
+    height: 100%;
+    width: 27%;
+    /* border: 1px solid red */
+}
+#productBar{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid rgb(58, 68, 4); */
+    position: relative;
+    display: block;
+    margin-top: -20px;
+}
+#sideBar>div>select{
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    font-size:20px ;
+}
+#sideBar>div>select>option{
+    font-size: 20px;
+}
+#sortbypopular>select{
+    position: absolute;
+    right: 10px;
+    border: none;
+    margin-top: 3px;
+    padding: 3px;
+}
+
+#innerbox1{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+    /* border: 1px solid rgb(191, 223, 10); */
+    gap: 10px;
+    
+   
+}
+#innerbox1>div{
+    width: auto;
+    /* border: 1px solid rgb(58, 68, 4); */
+    cursor: pointer;
+    
+    
+}
+#innerbox1>div:hover{
+    
+    background-color: #f0f2f5;
+opacity: 70%;
+visibility:visible;
+}
+#pic{
+    width: 100%;
+    
+}
+
+#tshirtsname{
+margin-top:1px;
+margin-bottom: 2px;
+font-size: 13px;
+color: #777;
+}
+#price{
+margin-top:1px;
+margin-bottom: 3px;
+font-weight: bold;
+}
+#member{
+margin-top:2px;
+background-color: rgb(231, 226, 226);
+width: 60%;
+font-size: 13px;
+}
+#sideBar>h5{
+margin-left: 15px;
+color: gray;
+}
